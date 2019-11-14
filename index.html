@@ -11,27 +11,47 @@
     <header>
         <h1>Marta Garcia's Portfolio</h1>
           <nav>
-              <ul>
+            <ul>
                 <li><a href="">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="projects">Projects</a></li>
                 <li><a href="contact">Contact</a></li>
-                </ul>
+            </ul>
           </nav>
     </header>
     <!-- Main including two sections; one with details and the second one with content -->
     <main>
         <!-- Section including details, title, information -->
-        <section class="details">
+        <section class="primary">
+            <section class="details">
             <h2>Web Designer and Front-end Developer</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic culpa quam est. 
                 Modi similique ex voluptas minima nesciunt quidem doloribus repudiandae corporis vel? 
                 Natus explicabo animi recusandae sed accusamus.</p>
+            </section>
+                <!-- 'aside' including;photo/avatar, contact link to email and form to ask questions-->
+            <section class="information">
+                <img src="images/Mavatar.png" alt="Avatar"><br>
+                <a id="contact" href="mailto:marta.garcia@test.com" target="_blank">Contact</a>
+                <!-- Form including name, email and questions to submit -->
+                <form action="//http:marta-garcia.com" method="GET">
+                <p>Please enter your details for questions here or click on 'Contact' to send an email directly:</p>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" maxlength="100" value="" placeholder="Enter your name here">
+                <br>
+                  <label for="email">E-mail</label>
+                  <input id="email" name="email" type="email" placeholder="Enter your e-mailadres"><br>
+                <label>Please fill out your questions here:</label><br>
+                <textarea name="Questions" id="Questions" cols="30" rows="5" placeholder="Enter your questions here"></textarea><br>
+                <input type="submit" value="Submit form">
+                  <p>Thank you for your interest, I will contact you within 48 hours </p>
+               </form>
+            </section>
         </section>
-        <!-- Section including content; 'section':"skills" and 'section':"projects" for the future-->
+        <!-- Section 'content' including content; 'section':"skills" and 'section':"projects" for the future-->
         <section class="content">
             <section class="skills">
-                <h3>Skills</h3>
+                <h2>Skills</h2>
                 <ul>
                     <li>HTML: Intermediate</li>
                     <li>CSS: Beginner</li>
@@ -40,37 +60,24 @@
                 </ul>
             </section>
             <section class="projects">
-                <h3>Skills</h3>
+                <h2>Skills</h2>
                 <ul>
-                <li>Website 'De Foodcontainer'</li>
-                <li>Website services 'radiation'</li>
-                <li>Website servides 'decluttering'</li>
+                    <li>Website 'De Foodcontainer'</li>
+                    <li>Website services 'radiation'</li>
+                    <li>Website servides 'decluttering'</li>
                 </ul>
             </section>
-
         </section>
-        <!-- 'aside' including;photo/avatar, contact link to email and form to ask questions-->
-        <aside>
-            <img src="images/Mavatar.png" alt="Avatar"><br>
-            <button id="contact">
-            <a href="mailto:marta.garcia@test.com>" target="_blank">Contact</a>
-            </button>
-            <form action="http:marta.garcia.com" method="GET">
-            <label for="Questions">Please fill out your questions here:</label><br>
-            <textarea name="Questions" id="" cols="30" rows="5" placeholder="Enter your questions here"></textarea><br>
-            <input type="submit" value="submit">
-            </form>
-        </aside>
     </main>
     <!-- footer includes the copyright, general term and conditions and links to social media -->
     <footer>
         <p> &copy; Marta Garcia 2019 </p>
         <p>General Term and conditions</p>
         <ul>
-            <li><a href=""><img src="images/facebook-square-brands.svg" alt="facebook" width="20px"></a></li>
-            <li><a href=""><img src="images/instagram-brands.svg" alt="instagram" width="20px"></a></li>
-            <li><a href=""><img src="images/linkedin-brands.svg" alt="linkedin" width="20px"></a></li>
-            <li><a href=""><img src="images/github-square-brands.svg" alt="github" width="20px"></a></li>
+            <li><a href=""><img src="images/facebook-square-brands.svg" alt="facebook" width="20"></a></li>
+            <li><a href=""><img src="images/instagram-brands.svg" alt="instagram" width="20"></a></li>
+            <li><a href=""><img src="images/linkedin-brands.svg" alt="linkedin" width="20"></a></li>
+            <li><a href=""><img src="images/github-square-brands.svg" alt="github" width="20"></a></li>
         </ul>
         <a href="#contact">Contact</a>
     </footer>  
