@@ -1,85 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Marta Garcia's portfolio</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <!-- Header including a navigation bar with links-->
-    <header>
-        <h1>Marta Garcia's Portfolio</h1>
-          <nav>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+    <header class="header">
+      <h1>Marta Garcia's Portfolio</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Main including two sections; one with details and the second one with content -->
     <main>
-        <!-- Section including details, title, information -->
-        <section class="primary">
-            <div class="details">
-            <h2>Web Designer and Front-end Developer</h2>
-            <p>My name is Marta, after following a Web Designer training I decided to go one step
-                further and to learn how  I can make designs actually work on the web... Hence the 
-                reason for me to follow the Noah Road!</p>
-            </div>
-                <!-- 'side section' including;photo/avatar, contact link to email and form to ask questions-->
-            <div class="information">
-                <img src="images/Mavatar.png" alt="Avatar"><br>
-                <a id="contact" href="mailto:marta.garcia@test.com" target="_blank">Contact</a>
-                <!-- Form including name, email and questions to submit -->
-                <form action="//http:marta-garcia.com" method="GET">
-                <p>Please enter your details for questions here or click on 'Contact' to send an email directly:</p>
-                  <label for="name">Name</label>
-                  <input id="name" name="name" type="text" maxlength="100" value="" placeholder="Enter your name here">
-                <br>
-                  <label for="email">E-mail</label>
-                  <input id="email" name="email" type="email" placeholder="Enter your e-mailadres"><br>
-                <label>Please fill out your questions here:</label><br>
-                <textarea name="Questions" id="Questions" cols="30" rows="5" placeholder="Enter your questions here"></textarea><br>
-                <input type="submit" value="Submit form">
-                  <p>Thank you for your interest, I will contact you within 48 hours </p>
-               </form>
-            </div>
-        </section>
-        <!-- Section 'content' including content; 'section':"skills" and 'section':"projects" for the future-->
-        <section class="content">
-            <div class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML: Intermediate</li>
-                    <li>CSS: Beginner</li>
-                    <li>Adobe Photoshop: Advance</li>
-                    <li>Adobe InDesign: Intermediate</li>
-                </ul>
-            </div>
-            <div class="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li>Website 'De Foodcontainer'</li>
-                    <li>Website services 'radiation'</li>
-                    <li>Website servides 'decluttering'</li>
-                </ul>
-            </div>
-        </section>
+      <!-- Section including details, title, information -->
+      <section class="primary">
+        <div class="details">
+          <h2>Web Designer and Front-end Developer</h2>
+          <p>
+            My name is Marta, after following a Web Designer training I decided
+            to go one step further and to learn how I can make designs actually
+            work on the web... Hence the reason for me to follow the Noah Road!
+          </p>
+        </div>
+        <!-- 'side section' including;photo/avatar, contact link to email and form to ask questions-->
+        <div class="information">
+          <img src="images/Mavatar.png" alt="Avatar" /><br />
+          <a id="contact" href="mailto:marta.garcia@test.com" target="_blank"
+            >Contact</a
+          >
+          <!-- Form including name, email and questions to submit -->
+          <form action="//http:marta-garcia.com" method="GET">
+            <p>
+              Please enter your details for questions here or click on 'Contact'
+              to send an email directly:
+            </p>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              maxlength="100"
+              value=""
+              placeholder="Enter your name here"
+            />
+            <br />
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your e-mailadres"
+            /><br />
+            <label>Please fill out your questions here:</label><br />
+            <textarea
+              name="Questions"
+              id="Questions"
+              cols="30"
+              rows="5"
+              placeholder="Enter your questions here"
+            ></textarea
+            ><br />
+            <input type="submit" value="Submit form" />
+            <p>
+              Thank you for your interest, I will contact you within 48 hours
+            </p>
+          </form>
+        </div>
+      </section>
+      <!-- Section 'content' including content; 'section':"skills" and 'section':"projects" for the future-->
+      <section class="content">
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML: Intermediate</li>
+            <li>CSS: Beginner</li>
+            <li>Adobe Photoshop: Advance</li>
+            <li>Adobe InDesign: Intermediate</li>
+          </ul>
+        </div>
+        <div class="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>Website 'De Foodcontainer'</li>
+            <li>Website services 'radiation'</li>
+            <li>Website servides 'decluttering'</li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- footer includes the copyright, general term and conditions and links to social media -->
     <footer>
-        <p> &copy; Marta Garcia 2019 </p>
-        <p>General Terms and conditions</p>
-        <ul>
-            <li><a href=""><img src="images/facebook-square-brands.svg" alt="facebook" width="20"></a></li>
-            <li><a href=""><img src="images/instagram-brands.svg" alt="instagram" width="20"></a></li>
-            <li><a href=""><img src="images/linkedin-brands.svg" alt="linkedin" width="20"></a></li>
-            <li><a href=""><img src="images/github-square-brands.svg" alt="github" width="20"></a></li>
-        </ul>
-        <a href="#contact">Contact</a>
-    </footer>  
-</body>
+      <p>&copy; Marta Garcia 2019</p>
+      <p>General Terms and conditions</p>
+      <ul>
+        <li>
+          <a href=""
+            ><img
+              src="images/facebook-square-brands.svg"
+              alt="facebook"
+              width="20"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="images/instagram-brands.svg" alt="instagram" width="20"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="images/linkedin-brands.svg" alt="linkedin" width="20"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="images/github-square-brands.svg" alt="github" width="20"
+          /></a>
+        </li>
+      </ul>
+      <a href="#contact">Contact</a>
+    </footer>
+  </body>
 </html>
