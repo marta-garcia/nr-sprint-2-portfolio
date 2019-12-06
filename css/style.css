@@ -218,7 +218,7 @@ h3 {
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.footer .copyright {
+.footer p {
   padding-left: 20px;
 }
 .icons a {
