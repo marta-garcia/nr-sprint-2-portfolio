@@ -52,10 +52,6 @@ h3 {
   background: #f4883a;
   height: 100%;
 }
-.clr {
-  clear: both;
-}
-
 /* Navigation */
 .navigation {
   display: grid;
@@ -101,7 +97,7 @@ h3 {
 /* Header including section 'details' */
 .details {
   grid-area: details;
-  min-height: 350px;
+  min-height: 460px;
   background: url("../images/puesta-de-sol.jpg");
   background-size: cover;
   background-position: center;
@@ -127,7 +123,7 @@ h3 {
 .portfolio {
   background: #f9f9f9;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 /* Skills */
 .standard.skills {
